@@ -3,7 +3,9 @@
 
 ##Outline
 ###Getting Started
-You will need to download Xcode 6 from the AppStore
+You will need to download Xcode 6 from the AppStore. 
+Mac OS X 10.9.3 is the minimum version to run Xcode 6.
+
 
 ###Exploring the IDE
 Create a new project and navigate around it. 
