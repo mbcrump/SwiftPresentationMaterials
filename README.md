@@ -1,7 +1,7 @@
 #Swift Presentation Materials
 ================
 
-##Outline
+##Presentation Outline
 ###Getting Started
 You will need to download Xcode 6 from the AppStore. 
 Mac OS X 10.9.3 is the minimum version to run Xcode 6.
