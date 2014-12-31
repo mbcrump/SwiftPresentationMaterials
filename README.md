@@ -46,7 +46,65 @@ We can also pull in other libraries such as Cocoa with:
 
 You can use :q to quit the terminal. 
 
+##Type Inference
 
+Allows us to not have to explicitly specify the type of variables
+
+For example: 
+	
+	let myValue = 30 + 2
+	
+We can assume this will be an Int.
+
+We can declare it as an Int with the following: 
+
+	let myValue: Int = 30 + 2
+	
+Unsigned Integers which cannot have a negative number, but can hold a large positive number. 
+
+*NOTE* Data Types Cannot Be Changed Once Assigned
+
+Swift prefers Int and Double types. 
+
+
+##Casting
+
+	let myInt = 5
+	let myDouble = Double(myInt)
+
+We could also add to the double. 
+
+##Finding Methods and Properties using Playgrounds
+
+Type the following code: 
+
+	let myInt: Int = 5
+	
+Hold control key and click Int, this will allow you to find properties and methods. Go ahead and search for description, then hit the back button and type: 
+
+	myInt.description
+	
+and you will see "5"
+
+##String Interpolation
+
+String interpolation allows you to insert the values directly inline in a string literal, by typing the \ (backslash) key, and then surrounding the value with parentheses.
+
+	let year = 2015
+	let currentYearText = "The current year is \(year)"
+
+##Optional Values
+Optional Values are declared with a question mark. 
+
+	var myOptIn : Int?
+	
+The value of myOptIn is nil.
+
+##UnWrapping Optionals
+Are there in case a variable may have a value or it may not. The exclamation point ! in the sample below shows an example of this: 
+
+	let degrees = "80"
+	let degreesInt = degrees.toInt()!
 
 ##Contact Info
 by: Michael Crump 
