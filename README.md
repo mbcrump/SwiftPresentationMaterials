@@ -113,6 +113,10 @@ Swift has a concept called optionals, where a variable may have a value, or it m
 
 Operates on a single value. They can be a prefix or postfix, meaning they can come before or after a constant or variable. 
 
+Postfix does not increase the value of its operand until after it has been evaluated. 
+
+Prefix decrement increases the value of its operand before it has been evaluated. 
+
 		++count
 		count++
 		
@@ -120,11 +124,11 @@ prefix and posfix example:
 
 	1> var x = 1 
 	x: Int = 1
-  	2> println(x++) 
+  	2> println(x++) //postfix
 	1
   	3> var x = 1 
 	x: Int = 1
-  	4> println(++x) 
+  	4> println(++x) //prefix 
 	2
   	5> var x = 1 
 	x: Int = 1
@@ -177,7 +181,16 @@ Half-ranged are good for zero-based list such as arrays, where the index of the 
 3
 4
 
-##Logical NOT Operator
+##Logical Operators
+They evaluate and return Boolean value types based on logic. 
+
+###AND 
+
+	let a = true
+	let b = false
+	let c = a && b
+
+###NOT
 
 It inverts the value of a Boolean variable.
 
@@ -186,7 +199,12 @@ It inverts the value of a Boolean variable.
 	
 **It must a prefix operator.**
 
+###OR
+Evaluates two operands and decides whether one is true or not, no matter which one, and then returns its results. 
 
+	let a = true
+	let b = false
+	let c = a || b
 
 ##Contact Info
 by: Michael Crump 
