@@ -105,6 +105,42 @@ Are there in case a variable may have a value or it may not. The exclamation poi
 
 	let degrees = "80"
 	let degreesInt = degrees.toInt()!
+	
+##Optionals
+Swift has a concept called optionals, where a variable may have a value, or it may not. In that case, to remain safe from runtime errors.
+
+##Unary
+
+Operates on a single value. They can be a prefix or postfix, meaning they can come before or after a constant or variable. 
+
+		++count
+		count++
+		
+prefix and posfix example:
+
+	1> var x = 1 
+	x: Int = 1
+  	2> println(x++) 
+	1
+  	3> var x = 1 
+	x: Int = 1
+  	4> println(++x) 
+	2
+  	5> var x = 1 
+	x: Int = 1
+  	6> println(x++) 
+	1
+  	7> println(x) 
+	2
+  
+
+##Logical NOT Operator
+
+It inverts the value of a Boolean variable.
+
+	let a = true
+	let b = !a //false now
+
 
 ##Contact Info
 by: Michael Crump 
