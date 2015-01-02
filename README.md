@@ -133,6 +133,49 @@ prefix and posfix example:
   	7> println(x) 
 	2
   
+Unary Minus Operator is short-hand for multiplying a variable's value by -1. 
+
+	let a = -33
+	
+##Binary Operators
+
+They are operands, which are values on either side of the operator. 
+
+	a + b
+	
+a and b are operands and + is the operator. 
+
+##Remainder Operator
+
+Uses the % sign and allows remainders for Double Types unlike C
+
+	int a = 8
+	int b = 6
+	let c = a % b
+	let d = 8.0
+	let e = 2.5
+	let f = d % e
+	
+	
+##Range Operators
+Are denoted by two dots and a left angle bracket or three dots depending on what type of range you need. 
+
+Closed-ranged sample are good for ranges where you want both the first and the last value of the range to be included.  
+
+	for a in 1...5 { println(a) }
+1
+2
+3
+4
+5
+
+Half-ranged are good for zero-based list such as arrays, where the index of the first element is 0, then 1 and 2. 
+
+	for a in 1..<5 { println(a) } 
+1
+2
+3
+4
 
 ##Logical NOT Operator
 
@@ -140,6 +183,9 @@ It inverts the value of a Boolean variable.
 
 	let a = true
 	let b = !a //false now
+	
+**It must a prefix operator.**
+
 
 
 ##Contact Info
