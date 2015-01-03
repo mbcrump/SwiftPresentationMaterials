@@ -205,6 +205,53 @@ Evaluates two operands and decides whether one is true or not, no matter which o
 	let a = true
 	let b = false
 	let c = a || b
+	
+	
+##Arrays
+Ordered sets of data and every member inside an array must be of the same type. 
+
+Any of the following types produce the same results: 
+
+	let myArray: Array<Int> = [1,2,3]
+	let myArray : [Int] = [1,2,3]
+	let myArray = [1,2,3]
+	
+Keep in mind that Array Member Types Cannot change due to type safety. 
+
+You can initialize an empty array with the following:
+
+	var items = [String]()
+	
+All arrays are zero-based.
+
+Subscripts are indexes enclosed inside square brackets immediately following the name of the array in code. 
+
+###Manipulating Arrays
+
+Here is an example of using subscripts to manipulate an array. 
+
+	var myArray : [String] = ["Foo", "Bar", "Baz"]
+	myArray[1] //Bar
+	myArray[1] = "Dog"
+	myArray[1] //Dog
+	
+You can add one to it by either of the following ways: 
+
+	myArray.append("Another Dog")
+	myArray += ["Cat"]
+	
+Insert elements into an Array
+
+	myArray.insert("Zero", atIndex :1)
+	 
+    [0] = "Foo"
+    [1] = "Zero"
+
+
+##Dictionaries
+
+##Tuple
+Not a declarable data type like an array, etc... but can be used to get data of varying types from dictionaries and other structures. 
 
 ##Contact Info
 by: Michael Crump 
