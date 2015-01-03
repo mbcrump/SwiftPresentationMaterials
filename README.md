@@ -265,6 +265,25 @@ Insert elements into an Array
 
 Are similar to arrays in that they hold list of data, except dictionaries are unordered list and instead of accessing them via indexes, dictionary values are accessed via keys. 
 
+	var myDict: Dictionary<String, Double> = ["pi" : 3.14]
+	
+You can declare a dictionary and initialize it with nothing as shown below: 
+
+	var MyDict =  Dictionary<String, Double>() 
+	
+Swift can also use type inference to determine which type a variable is:
+
+	var MyDict = ["pi" : 3.14]
+	MyDict["pi"] = 4.0 //Updates the value
+	
+	MyDict["pi"] = nil // allows you to remove the pair
+	
+###Useful Methods and Properties
+ 
+ 	MyDict.count
+ 	MyDict.keys
+ 	MyDict.values
+
 ##Tuple
 Not a declarable data type like an array, etc... but can be used to get data of varying types from dictionaries and other structures. 
 
