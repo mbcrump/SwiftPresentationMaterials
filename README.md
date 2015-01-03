@@ -275,7 +275,7 @@ Swift can also use type inference to determine which type a variable is:
 
 	var MyDict = ["pi" : 3.14]
 	MyDict["pi"] = 4.0 //Updates the value
-	
+	MyDict(125,  forKey:"pi")
 	MyDict["pi"] = nil // allows you to remove the pair
 	
 ###Useful Methods and Properties
@@ -285,7 +285,7 @@ Swift can also use type inference to determine which type a variable is:
  	MyDict.values
 
 ##Tuple
-Not a declarable data type like an array, etc... but can be used to get data of varying types from dictionaries and other structures. 
+Tuples can be used to extract the index and value from an Array item, or the key and value from a Dictionary item, as a pair that can extract those values to individual temporary values. They are often used in for-in loops 
 
 ##Contact Info
 by: Michael Crump 
