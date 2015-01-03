@@ -246,9 +246,24 @@ Insert elements into an Array
 	 
     [0] = "Foo"
     [1] = "Zero"
-
-
+    
+    myArray[3] = "Test!"
+    
+ Removing items in an araray
+ 
+ 	myArray.removeAtIndex(0)
+ 	myArray.removeLast()
+ 	myArray = [] //would remove all items
+ 	
+ ###Useful Methods and Properties
+ 
+ 	myArray.count
+ 	myArray.isEmpty
+ 	myArray.reverse
+ 	
 ##Dictionaries
+
+Are similar to arrays in that they hold list of data, except dictionaries are unordered list and instead of accessing them via indexes, dictionary values are accessed via keys. 
 
 ##Tuple
 Not a declarable data type like an array, etc... but can be used to get data of varying types from dictionaries and other structures. 
