@@ -1,7 +1,6 @@
-#Swift Presentation Materials
+#Learning Swift 
 ================
 
-##Presentation Outline
 ###Getting Started
 You will need to download Xcode 6 from the AppStore. 
 Mac OS X 10.9.3 is the minimum version to run Xcode 6.
@@ -286,6 +285,49 @@ Swift can also use type inference to determine which type a variable is:
 
 ##Tuple
 Tuples can be used to extract the index and value from an Array item, or the key and value from a Dictionary item, as a pair that can extract those values to individual temporary values. They are often used in for-in loops 
+
+##Optionals
+Optionals in Swift are a way to handle the absence of a value, which can and happens often. 
+
+Optionals only apply to variables and are used by simply adding a ? mark character at the end.
+
+	var myString: String?
+	
+##UnWrapping
+You can unwrap an optional by simply using the ! operator. 
+
+ 	1> var optStr: String?
+	optStr: String? = nil
+  	2> optStr = "Test"
+ 	3> optStr
+	$R0: String? = "Test"
+ 	4> let unwrappedString  = optStr!
+	unwrappedString: String = "Test"
+   
+Here we can see that we wrapped optStr into a String optional. We used the ? mark to unwrap it into a string and displayed what type of variable it contained. 
+
+**Don't unwrap a nil value**
+
+You can use the if let keyword to see if a value is wrapped or not. This will prevent against hitting nil. 
+
+		if let unwrappedString = optionalString 
+		{ println("unwrappedString is not nil, and equals \(unwrappedString)")
+		} else 
+		{ println("optionalString contains nil")
+		}
+
+##Implicitely Unwrapped Variables
+These variables are initialized with a value and cannot be nil. 
+
+	var myVar = Int!
+	
+##Nil Coalescing Operator
+
+	let result = optionalString ?? "No Value"
+	
+If optionalString is nil, then "No Value" is assigned to result. Otherwise, the unwrapped optionalString value is assigned to result. 
+
+
 
 ##Contact Info
 by: Michael Crump 
