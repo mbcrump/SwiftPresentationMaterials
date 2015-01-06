@@ -327,7 +327,10 @@ These variables are initialized with a value and cannot be nil.
 	
 If optionalString is nil, then "No Value" is assigned to result. Otherwise, the unwrapped optionalString value is assigned to result. 
 
+##Understanding nil
+Objective-C = uses nil with pointer to an object that does not exist.
 
+Swift = uses nil and it simply means that a value of a certain type is missing. A nil optional that is forced unwrapped will not give a compile-time error. 
 
 ##Contact Info
 by: Michael Crump 
