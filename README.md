@@ -376,6 +376,27 @@ It is written as a short-hand for a longer if-else expression that checks a part
 	
 	//if value was switch to false it would be 100
 
+Remember that parentheses are optional in if statements
+
+###Switch
+
+Like most languages, switch statements must be exhaustive, meaning that you must either provide a case clause and a block of code to execute for every value or provide a default case. 
+
+	let a = 101
+	var result : String!
+
+	switch a {
+	case 10:
+    	result = "a = 10"
+	case 100:
+    	result = "a = 100"
+	default:
+    	result = "Does not match either 10 or 100"
+	}
+	
+The result variable would contain the 'does not match either 10 or 100'
+
+
 
 ##Contact Info
 by: Michael Crump 
