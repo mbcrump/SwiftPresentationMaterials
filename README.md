@@ -332,6 +332,40 @@ Objective-C = uses nil with pointer to an object that does not exist.
 
 Swift = uses nil and it simply means that a value of a certain type is missing. A nil optional that is forced unwrapped will not give a compile-time error. 
 
+##Conditions
+Swift contains two conditions : if and the switch statement. 
+
+###If
+
+	let valueToCheck = true
+	if valueToCheck {
+	// true
+	} else {
+	// false
+	}
+
+the else if gives you additional paths
+
+A full example is shown below: 
+
+	import UIKit
+	import Foundation
+
+	let randomNumber = arc4random() % 10
+	var result: String!
+
+	if randomNumber == 0 {
+    result = "Zero is the first index in an array"
+	}
+	else if randomNumber == 1 {
+    result = "One is the loneliest number..."
+	}
+	else {
+    result = "Our random number is \(result)"
+	}	
+
+
+
 ##Contact Info
 by: Michael Crump 
 
