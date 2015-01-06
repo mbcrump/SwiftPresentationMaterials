@@ -364,6 +364,17 @@ A full example is shown below:
     result = "Our random number is \(result)"
 	}	
 
+###Ternary Conditional Operators
+It is written as a short-hand for a longer if-else expression that checks a particular case or condition and provides a value for the true branch and another value for the false branch. 
+
+	let value = true
+	let a = 100
+	let b = 200
+	var totalPay = 0
+
+	totalPay = (value) ? a + b : a // 300
+	
+	//if value was switch to false it would be 100
 
 
 ##Contact Info
