@@ -442,6 +442,38 @@ The following will result in nothing matching and the default case working.
     println("server error")
 	}
 
+You can use the where statement to refine the condition to be validated. 
+
+	let e = (302, "Found")
+	switch e {
+	case (200, _):
+    println("success")
+	case let (number, word) where number == 302:
+    println("found")
+	default:
+    println("server error")
+	}
+
+	//found is printed
+	
+In Swift, break is implied after each case statement's code has executed. 
+
+Use fallthrough to execute the next case or the default case, whichever may happen first. 
+
+	let e = (302, "Found")
+	switch e {
+	case (200, _):
+    println("success")
+	case let (number, word) where number == 302:
+    println("found")
+    fallthrough
+	default:
+    println("server error")
+	}
+	
+	//prints found and server error
+	
+
 ##Contact Info
 by: Michael Crump 
 
