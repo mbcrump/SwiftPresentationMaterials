@@ -396,7 +396,51 @@ Like most languages, switch statements must be exhaustive, meaning that you must
 	
 The result variable would contain the 'does not match either 10 or 100'
 
+Swift does not require an explicit break command at the end of every case block. 
 
+You can also use multiple values in a single case
+
+	let a = 12
+	var result : String!
+
+	switch a {
+	case 10...12:
+    result = "a = 10"
+	case 100:
+    result = "a = 100"
+	default:
+    result = "Does not match either 10 or 100"
+	}
+
+Wildcards are denoted by the understore _ means that any value in the considered value is a match for that place in the tuple. 
+
+###Switch Tuple Matching
+
+	let e = (302, "Found")
+	switch e {
+	case (200, _):
+    println("success")
+	case (302, _):
+    println("found")
+	case (404, _):
+    println("not found")
+	default:
+    println("server error")
+	}
+
+The following will result in nothing matching and the default case working. 
+
+	let e = (302, "Found")
+	switch e {
+	case (200, _):
+    println("success")
+	case (302, "willnotmatch"):
+    println("found")
+	case (404, _):
+    println("not found")
+	default:
+    println("server error")
+	}
 
 ##Contact Info
 by: Michael Crump 
