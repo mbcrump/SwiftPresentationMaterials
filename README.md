@@ -160,6 +160,8 @@ Uses the % sign and allows remainders for Double Types unlike C
 	let f = d % e
 	
 	
+	
+	
 ##Range Operators
 Are denoted by two dots and a left angle bracket or three dots depending on what type of range you need. 
 
@@ -473,6 +475,23 @@ Use fallthrough to execute the next case or the default case, whichever may happ
 	
 	//prints found and server error
 	
+###Swift Loops
+
+Swift has two main loops (while and for)
+
+While loops evaluate the condition before the statements inside the block executes and a do-while loop executes the first iteration automatically and then checks the condition at the end. 
+
+	var count = 0
+	while count < 10 {
+	println(count)
+	++count
+	}
+
+Be careful of infinite loops which happen when the condition that gets evaluated is never false, so it just keeps going until the app runs out of memory or is killed. 
+
+
+
+
 
 ##Contact Info
 by: Michael Crump 
