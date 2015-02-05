@@ -489,6 +489,16 @@ While loops evaluate the condition before the statements inside the block execut
 
 Be careful of infinite loops which happen when the condition that gets evaluated is never false, so it just keeps going until the app runs out of memory or is killed. 
 
+The do-while loop is similar to that of the while loops, with one small difference; the do-while loop performs the statements inside the loop exactly once before evaluating the loop's condition. If the condition is true, the statements inside the do-while loop are executed again. If the condition is false, control is transferred to the statement immediately following the while condition. 
+
+	var count = 0
+	do {
+		println("count is \(count)")
+		++count
+	} while count < 10
+	
+
+
 
 
 
